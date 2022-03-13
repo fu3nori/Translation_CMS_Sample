@@ -1,6 +1,6 @@
 # Translation_CMS_Sample
 日本語から4か国語に同時翻訳して文章をCMSに登録するサンプル cakephp3.8ベース php5.6必須
-git clone後にマイグレーションファイルからDBを構築
+git clone後にtrans.sqlからDBを構築
 
 ## Usage JP
 コントローラー・transにアクセス　
@@ -13,7 +13,7 @@ EX. http://127.0.0.1/trans/trans
 Translation_CMS_Sample
 Outline
 Sample of registering sentences from Japanese to 4 languages simultaneously in CMS based on cakephp3.8 php5.6 required
-Build DB from migration files after git clone
+Build DB from trans.sql files after git clone
 
 Usage
 Access to controller trans　
