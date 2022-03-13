@@ -16,3 +16,4 @@ echo $this->Form-> end();
 <p>
     <?php echo $work ?>
 </p>
+<b><a href="check">翻訳内容を確認する</a></b>
