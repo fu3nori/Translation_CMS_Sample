@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="da7cdd68-83e7-4254-82a6-ea284538e1a5" name="trans">
+        <fileTransfer rootFolder="/home/ugsf/www/hasidume/develop/trans" accessType="SFTP" host="ugsf.sakura.ne.jp" port="22" sshConfigId="66616535-cabc-4b6d-b9b1-de9e6562c956" sshConfig="ugsf@ugsf.sakura.ne.jp:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

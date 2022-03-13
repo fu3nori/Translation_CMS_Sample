@@ -1,0 +1,49 @@
+2022-03-13 10:49:37 Error: [RuntimeException] Unknown command `cake model`. Run `cake --help` to get the list of valid commands. in C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 346
+Stack Trace:
+#0 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Console\CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'model')
+#1 C:\xampp\htdocs\trans\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2022-03-13 11:01:33 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trans.trans' doesn't exist in C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 132
+Stack Trace:
+#0 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'trans', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(61): Cake\Database\Schema\Collection->describe('trans', Array)
+#2 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\ORM\Table.php(566): Cake\Database\Schema\CachedCollection->describe('trans')
+#3 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\ORM\Table.php(691): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\trans\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(288): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\trans\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(142): Bake\Shell\Task\TemplateTask->_loadController()
+#6 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Console\Shell.php(531): Bake\Shell\Task\TemplateTask->main('trans')
+#7 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Console\Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#9 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#10 C:\xampp\htdocs\trans\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#11 {main}
+
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trans.trans' doesn't exist in C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 37
+Stack Trace:
+#0 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(37): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Connection.php(358): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Connection.php(361): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Connection.php(310): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#7 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#8 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#9 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(130): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#10 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'trans', Array, Object(Cake\Database\Schema\TableSchema))
+#11 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(61): Cake\Database\Schema\Collection->describe('trans', Array)
+#12 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\ORM\Table.php(566): Cake\Database\Schema\CachedCollection->describe('trans')
+#13 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\ORM\Table.php(691): Cake\ORM\Table->getSchema()
+#14 C:\xampp\htdocs\trans\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(288): Cake\ORM\Table->getPrimaryKey()
+#15 C:\xampp\htdocs\trans\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(142): Bake\Shell\Task\TemplateTask->_loadController()
+#16 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Console\Shell.php(531): Bake\Shell\Task\TemplateTask->main('trans')
+#17 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Console\Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#18 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#19 C:\xampp\htdocs\trans\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#20 C:\xampp\htdocs\trans\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+
